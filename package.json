@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish:npm": "rm -rf dist/ && mkdir dist/ && tsc src/hooks/*.ts -d --outDir dist/"
   },
   "eslintConfig": {
     "extends": "react-app"
