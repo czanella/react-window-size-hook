@@ -1,9 +1,9 @@
 {
   "name": "react-window-size-hook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "private": false,
-  "dependencies": {
+  "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -12,17 +12,21 @@
     "@types/react": "^16.9.32",
     "@types/react-dom": "^16.9.6",
     "node-sass": "^4.13.1",
+    "np": "^6.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "typescript": "^3.7.5"
   },
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
-    "build:publish": "rm -rf dist/ && mkdir dist/ && tsc src/hooks/*.ts -d --outDir dist/"
+    "build:publish": "rm -rf dist/ && mkdir dist/ && tsc src/hooks/*.ts -d --outDir dist/ && np"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +43,9 @@
       "last 1 safari version"
     ]
   },
+  "files": [
+    "dist/*"
+  ],
   "author": {
     "name": "Carlos Zanella"
   },
