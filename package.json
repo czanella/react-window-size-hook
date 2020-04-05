@@ -1,6 +1,7 @@
 {
   "name": "react-window-size-hook",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -21,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm": "rm -rf dist/ && mkdir dist/ && tsc src/hooks/*.ts -d --outDir dist/"
+    "build:publish": "rm -rf dist/ && mkdir dist/ && tsc src/hooks/*.ts -d --outDir dist/"
   },
   "eslintConfig": {
     "extends": "react-app"
