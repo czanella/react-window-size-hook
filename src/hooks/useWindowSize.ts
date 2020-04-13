@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function useWindowSize(): Array<Number> {
+export function useWindowSize(): [Number, Number] {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
 
